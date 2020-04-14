@@ -1,0 +1,50 @@
+<!-- Write a JavaScript which will be used in an HTML document that contains a table having at least 3 columns and several lines. 
+    When the user clicks the table header the script will sort in ascending order the elements from the current column. 
+    If the user clicks again on the column header, the elements will be sorted in descending order.-->
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="lab5.js"></script>
+    <style>
+        th {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <table id="myTable">
+        <tr>
+            <th onclick="sort_table('myTable', 0)">Student Id</th>
+            <th onclick="sort_table('myTable', 1)">First Name</th>
+            <th onclick="sort_table('myTable', 2)">Last Name</th>
+            <th onclick="sort_table('myTable', 3)">Grade</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Maria</td>
+            <td>Popescu</td>
+            <td>7</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Cristian</td>
+            <td>Pop</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Alexandra</td>
+            <td>Matei</td>
+            <td>6</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Ion</td>
+            <td>Antonescu</td>
+            <td>9</td>
+        </tr>
+    </table>
+
+</body>
+</html>

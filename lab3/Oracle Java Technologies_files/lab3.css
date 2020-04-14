@@ -1,0 +1,214 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.main_container {
+    position:absolute;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.header{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    display:flex;
+    flex-direction: row;
+    background-color: #3F3A36;
+    width:100%;
+
+}
+
+.home_logo
+{
+    width: 50px;
+    height: 35px;
+    padding-top: 5px;
+    padding-right: 30px;
+}
+
+.menu
+{
+    width: 40px;
+    height: 30px;
+    padding-left: 5px;
+    padding-top: 7px;
+    padding-right: 40px;
+}
+
+.header input{
+    padding-left: 50px;
+    border-radius: 20px;
+    border-width: 0px;
+    border-color: #57504A;
+    color: rgb(255, 255, 255);
+    min-width: 800px;
+    font-family: "Oracle Sans", "Segoe UI", "Helvetica Neue", sans-serif;;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #57504A;
+    background-image: url('search.png');
+    background-position: 1.4%;
+    background-repeat: no-repeat;
+    background-size: 4%;
+}
+
+.account {
+    padding-left: 50px;
+    border-radius: 5px;
+    border-width: 0px;
+    border-color: #3F3A36;
+    color: #E7E7E6;
+    width: 100px;
+    font-family: "Oracle Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #3F3A36;
+    background-image: url('profile.png');
+    background-position: 1.4%;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 40px;
+}
+
+.try_oracle
+{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+    border-color: #312D2A;
+    color: #E7E7E6;
+    width: 170px;
+    font-family: "Oracle Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #312D2A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subheader
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: rgb(0, 0, 0);
+}
+
+.cloud_section
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 20px;
+    padding-right: 30px;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #3F3A36;
+}
+
+.cloud{
+    padding-left: 30px;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-right: 30px;
+    width: 270px;
+    height: 180px;
+    margin: 10px;
+}
+
+.java_innovation{
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 5px;
+    border-width: 0px;
+    border-color: #ffffff;
+    color: #000000;
+    width: 230px;
+    font-family: "Oracle Sans", "Segoe UI", "Helvetica Neue", sans-serif;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menu_bar{
+    margin-left: 50px;
+    margin-right: auto;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #ffffff;
+}
+
+.menu_bar_item{
+    color:black;
+    font-size: 17px;
+    padding-right: 30px;
+}
+
+.downloads
+{
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 30px;
+    display:flex;
+    flex-direction: row;
+    width:100%;
+    background-color: #F1F0EB;
+}
+
+.downloads_list_with_header
+{
+    margin-left: 30px;
+    padding-right: 500px;
+}
+
+.downloads_list_item
+{
+    width: 200px;
+    font-size: 17px;
+    color: #C37C4D;
+}
+
+.downloads_list
+{
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 170%;
+}
+
+.downloads_list_header{
+    font-size: 20px;
+}

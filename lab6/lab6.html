@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="jquery-3.5.0.js"></script>
+<script>
+    window.location.hash = '#1'
+</script>
+<script>
+var desktop = "#2"
+
+$(document).ready(function(){
+    $(".desktop").click(function() {
+        $('html,body').animate({scrollTop: $(desktop).offset().top},'slow');
+        switch(desktop) 
+        {
+            case "#2":
+                desktop="#3";
+                break;
+            case "#3":
+                desktop="#4";
+                break;
+            case "#4":
+                desktop="#1";
+                break;
+            case "#1":
+                desktop="#2";
+                break;
+            default:
+                break
+        }   
+        
+});
+});
+</script>
+<style>
+html{
+  height: 100%;
+}
+body{
+    height: 100%;
+    overflow: hidden;
+}
+.desktop{
+    display: block;
+    height: 100%;
+    color: rgb(0, 0, 0); text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.painting_div{
+    padding-left: 20%;
+    display: flex;
+    flex-direction: row;
+}
+
+</style>
+</head>
+<body>
+
+    <div id="4" class="desktop" style="background-color: rgb(54, 108, 209);">
+        <div class="painting_div">
+            <p style="color: rgb(8, 9, 66);"><b style="font-size: 20px;">#1</b><br>"Salvator Mundi" by Leonardo da Vinci<br>Price: $469.7 million</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5c/Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg/408px-Leonardo_da_Vinci%2C_Salvator_Mundi%2C_c.1500%2C_oil_on_walnut%2C_45.4_%C3%97_65.6_cm.jpg" width="408px" height="600px" style="padding-left: 30px;">
+        </div>
+    </div>
+
+    <div id="3" class="desktop" style="background-color: rgb(143, 223, 196);">
+        <div class="painting_div">
+            <p style="color: rgb(6, 78, 6);"><b style="font-size: 20px;">#2</b><br>"Interchanged" by Willem de Koonig<br>Price: ~$324 million </p>
+            <img src="https://upload.wikimedia.org/wikipedia/en/5/5f/Photo_of_Interchanged_by_Willem_de_Kooning.jpg" width="296px" height="335px" style="padding-left: 30px;">
+        </div>
+    </div>
+
+    <div id="2" class="desktop" style="background-color: rgb(65, 3, 3);">
+        <div class="painting_div">
+            <p style="color: blanchedalmond;"><b style="font-size: 20px;">#3</b><br>"The Card Players" by Paul Cézanne<br>Price: $284 million +</p>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/6/69/Les_Joueurs_de_cartes%2C_par_Paul_C%C3%A9zanne.jpg" width="585px" height="480px" style="padding-left: 30px;">
+        </div>
+    </div>
+
+    <div id="1" class="desktop" style="background-color: rgb(255, 255, 255);">
+        <h1 style="padding-left: 30%; ">Top 3 Highest Prices Paid For Paintings</h1>
+    </div>
+
+</body>
+</html>
